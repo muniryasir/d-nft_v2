@@ -1,0 +1,26 @@
+concordium-client module deploy /home/yasir/concordium_dev/contracts/dNFT/d-nft_v2/dist/smart-contract-multi/module.wasm.v1 --sender Yasir --name cis2_dynamic_nft --grpc-port 20000 --grpc-ip node.testnet.concordium.com
+
+Transaction 'a2390781f0ff851b84d7cbdfa5eecd9f9b2ca4b0723f6fd330ca9bd11cdd1d69' sent to the baker.
+Waiting for the transaction to be committed and finalized.
+You may skip this step by interrupting the command using Ctrl-C (pass flag '--no-wait' to do this by default).
+The transaction will still get processed and may be queried using
+  'concordium-client transaction status a2390781f0ff851b84d7cbdfa5eecd9f9b2ca4b0723f6fd330ca9bd11cdd1d69'.
+[10:20:00] Waiting for the transaction to be committed......
+Transaction is finalized into block b5c7af5567d82baf5c9fdf5e25f7618c001ebcaefc6c29f26cabe450ffa7e8b6 with status "success" and cost 8.559927 CCD (104092 NRG).
+[10:20:08] Transaction finalized.
+Module successfully deployed with reference: '2d8099b54367776f213f0ce2dac975f51a5bbb758bac88bde988182a1041bcde'.
+Module reference 2d8099b54367776f213f0ce2dac975f51a5bbb758bac88bde988182a1041bcde was successfully named 'cis2_dynamic_nft'.
+
+concordium-client contract init 2d8099b54367776f213f0ce2dac975f51a5bbb758bac88bde988182a1041bcde --sender Yasir --energy 30000 --contract cis2_dynamic_nft --grpc-port 20000 --grpc-ip node.testnet.concordium.com
+
+Transaction '7331a86d582546d074cc71e7bcbd7bb26691b6f3897bf0c8912ffdfa23543d72' sent to the baker.
+Waiting for the transaction to be committed and finalized.
+You may skip this step by interrupting the command using Ctrl-C (pass flag '--no-wait' to do this by default).
+The transaction will still get processed and may be queried using
+  'concordium-client transaction status 7331a86d582546d074cc71e7bcbd7bb26691b6f3897bf0c8912ffdfa23543d72'.
+[10:23:23] Waiting for the transaction to be committed.....
+Transaction is finalized into block 8d5e6d546ab261485aaa770b635fe9e37084ee02f7e0398afca7475437a11521 with status "success" and cost 0.227049 CCD (2761 NRG).
+[10:23:29] Transaction finalized.
+Contract successfully initialized with address: {"index":9583,"subindex":0}
+
+concordium-client contract update 9583 --entrypoint mint --parameter-json /home/yasir/concordium_dev/contracts/dNFT/d-nft_v2/token_parameters/mint-parameters.json --schema /home/yasir/concordium_dev/contracts/dNFT/d-nft_v2/dist/smart-contract-multi/schema.bin --sender Yasir --energy 30000 --grpc-port 20000 --grpc-ip node.testnet.concordium.com

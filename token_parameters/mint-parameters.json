@@ -1,0 +1,28 @@
+
+  {
+    "owner": {
+        
+         "Account": ["3SfHLNkmy61ZUQkAhMvAwKj47EYDBiUPbn3wHghFD6qGr8WDGc"]
+        
+       },
+    "tokens": [
+        [
+            "01",
+            {
+                "metadata_url": [
+                    {
+                        
+                        "hash": {
+                            "Some": [
+                                "QmWHeES4Yt8TaQrbLNgkVzddNwkwV4SDA8CT3bkCGKnhsW"
+                            ]
+                        },
+                        "url": "https://silver-tough-swordtail-947.mypinata.cloud/ipfs/QmWHeES4Yt8TaQrbLNgkVzddNwkwV4SDA8CT3bkCGKnhsW"
+                    }
+                ],
+                "token_amount": "1"
+            }
+        ]
+    ]
+}
+

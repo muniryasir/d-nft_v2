@@ -1,0 +1,26 @@
+{
+    "owner": {
+        "Account": [
+            "3SfHLNkmy61ZUQkAhMvAwKj47EYDBiUPbn3wHghFD6qGr8WDGc"
+        ]
+    },
+    "tokens": [
+        [
+            "04",
+            {
+                "metadata_url": [
+                    {
+                    "url": "https://gist.githubusercontent.com/muniryasir/88844fc65168183cb86189128a87805d/raw/c224f3aa913d15537454a01707e2820758bee8cb/gistfile1.txt",
+                        "hash": {
+                            "None": [
+                                
+                            ]
+                        }
+                    }
+               
+                ],
+                "token_amount": "1"
+            }
+        ]
+    ]
+}
